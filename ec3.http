@@ -1,4 +1,4 @@
-@server = https://hypebuggy-super-duper-space-guacamole-44p49q5wv57hj6v5-8080.preview.app.github.dev
+@server = https://evac03-limaylla.onrender.com
 
 ################ Categorias: ################
 ###
@@ -7,7 +7,7 @@ GET {{server}}/categorias
 POST {{server}}/categorias
 Content-Type: application/json
 
-{"gaita": "Instrumento de viento"}
+{"nombre": "Instrumento de golpe"}
 ################ Instrumentos: ################
 ###
 GET {{server}}/instrumentos
@@ -15,8 +15,8 @@ GET {{server}}/instrumentos
 POST {{server}}/instrumentos
 Content-Type: application/json
 
-{"nombre": "flauta", "categoria": "http://localhost/api/ec3/categorias/1"}
+{"nombre": "congas", "categoria": "http://localhost/api/ec3/categorias/1"}
 ###
-GET {{server}}/instrumentos/2/categoria
+GET {{server}}/instrumentos/1/categoria
 ###
 GET {{server}}/instrumentos?sort=nombre,desc
